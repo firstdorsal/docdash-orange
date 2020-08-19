@@ -7,6 +7,8 @@
   --c6: black;
 }
 
+
+
 * {
   box-sizing: border-box
 }
@@ -59,6 +61,8 @@ ol,
 blockquote {
   margin-bottom: 1em;
   line-height: 160%;
+  overflow: hidden;
+  overflow-wrap: break-word;
 }
 
 h1,
@@ -437,7 +441,7 @@ footer {
 }
 
 .prettyprint>code {
-  padding: 15px;
+  padding: 10px;
 }
 
 .prettyprint .linenums code {
@@ -560,6 +564,7 @@ span.param-type,
 
 .param-type {
   margin: 14px 0;
+  margin-bottom: 60px;
 }
 
 .disabled {
@@ -661,14 +666,14 @@ span.param-type,
 .nav-trigger:checked+label.x .navicon:before {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  background: #FFF;
+  background: rgb(0, 0, 0);
 }
 
 .nav-trigger:checked+label.plus .navicon:after,
 .nav-trigger:checked+label.x .navicon:after {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  background: #FFF;
+  background: rgb(0, 0, 0);
 }
 
 .nav-trigger:checked+label.plus {
@@ -716,6 +721,7 @@ html[data-search-mode] .level-hide {
 @media only screen and (max-width: 680px) {
   body {
     overflow-x: hidden;
+    padding: 0px;
   }
 
   nav {
@@ -732,13 +738,31 @@ html[data-search-mode] .level-hide {
     transition: left 0.2s;
   }
 
+  nav ul a {
+    font-size: 18px;
+    padding-bottom: 12px;
+  }
+
+  nav ul a:active {
+    font-size: 18px;
+    padding-bottom: 12px;
+  }
+
+
   .navicon-button {
     display: inline-block;
     position: fixed;
-    top: 1.5em;
-    right: 0;
-    z-index: 2;
+    bottom: -10px;
+    left: -15px;
+    z-index: 5;
+    transform: scale(0.75);
   }
+
+
+  footer {
+    padding-bottom: 60px;
+  }
+
 
   #main {
     width: 100%;
@@ -746,6 +770,7 @@ html[data-search-mode] .level-hide {
 
   #main h1.page-title {
     margin: 1em 0;
+    font-size: 36px;
   }
 
   #main section {
@@ -755,6 +780,24 @@ html[data-search-mode] .level-hide {
   footer {
     margin-left: 0;
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  .description,
+  .param-desc,
+  .param-type,
+  .usertext {
+    padding: 0px 10px;
+  }
+
+  dl {
+    margin: 0px 10px;
+  }
+
+
 }
 
 /** Add a '#' to static members */
