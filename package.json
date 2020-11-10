@@ -1,6 +1,6 @@
 {
-  "name": "docdash",
-  "version": "1.2.0",
+  "name": "docdash-orange",
+  "version": "1.0.0",
   "description": "A clean, responsive documentation template theme for JSDoc 3 inspired by lodash and minami",
   "main": "publish.js",
   "scripts": {
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/clenemt/docdash.git"
+    "url": "https://git.y.gy/firstdorsal/docdash-orange"
   },
   "devDependencies": {
     "jsdoc": "latest",
     "browser-sync": "latest",
     "watch-run": "latest"
   },
-  "author": "Clement Moron <clement.moron@gmail.com>",
+  "author": "Paul Colin Hennig",
   "license": "Apache-2.0",
   "keywords": [
     "jsdoc",
