@@ -31,6 +31,9 @@ docdash-orange includes or depends upon the following third-party software, eith
 whole or in part. Each third-party software package is provided under its own
 license.
 
+## Docdash
+
+
 Docdash is free software, licensed under the Apache License, Version 2.0 (the
 "License"). Commercial and non-commercial use are permitted in compliance with
 the License.
