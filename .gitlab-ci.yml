@@ -6,6 +6,5 @@ stages:
 publish:
   stage: publish
   script:
-    - npm install
     - echo 'https://registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
     - npm publish
