@@ -114,9 +114,7 @@ h4 {
 h4.name {
   color: var(--c6);
   background: var(--c1);
-  box-shadow: 0 .25em .5em #d3d3d3;
-  border-top: 1px solid #d3d3d3;
-  border-bottom: 1px solid #d3d3d3;
+
   margin: 1.5em 0 0.5em;
   padding: .75em 0 .75em 10px;
 }
@@ -289,6 +287,7 @@ nav ul a:active {
   padding: 0;
   display: block;
   font-size: 14px;
+
 }
 
 nav a:hover,
@@ -302,12 +301,14 @@ nav>ul {
 
 nav>ul>li>a {
   color: var(--c2);
-  margin-top: 10px;
+  margin-top: 5px;
+  font-weight: bold;
+
+
 }
 
 nav ul ul a {
-  color: hsl(207, 1%, 60%);
-  border-left: 1px solid hsl(207, 10%, 86%);
+  color: black;
 }
 
 nav ul ul a,
@@ -322,8 +323,11 @@ nav h2 {
 }
 
 nav>h2>a {
+  font-weight: bold;
+
   margin: 10px 0 -10px;
   color: var(--c2) !important;
+
 }
 
 footer {
@@ -493,16 +497,15 @@ footer {
 
 table {
   border-spacing: 0;
-  border: 1px solid #ddd;
   border-collapse: collapse;
-  border-radius: 3px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   width: 100%;
   font-size: 14px;
   margin: 1em 0;
   display: block;
-  overflow-x: scroll;
+  overflow-x: auto;
+  background: #EEE;
 }
+
 
 td,
 th {
@@ -511,13 +514,19 @@ th {
   vertical-align: top;
   padding: 10px;
   display: table-cell;
+  background: #EEE;
+
+}
+
+td>code {
+  background: #FFF;
+
 }
 
 thead tr,
 thead tr {
   background-color: #fff;
   font-weight: bold;
-  border-bottom: 1px solid #ddd;
 }
 
 .params .type {
@@ -537,9 +546,6 @@ thead tr {
   font-size: 100%;
 }
 
-.params td {
-  border-top: 1px solid var(--c5)
-}
 
 .params td.description>p:first-child,
 .props td.description>p:first-child {
@@ -743,6 +749,7 @@ html[data-search-mode] .level-hide {
   nav ul a {
     font-size: 18px;
     padding-bottom: 12px;
+
   }
 
   nav ul a:active {
@@ -804,6 +811,7 @@ html[data-search-mode] .level-hide {
     z-index: 3;
     padding: 0 10px;
     transition: left 0.2s;
+    padding-bottom: 50px;
   }
 
   nav ul a {
@@ -936,5 +944,68 @@ html[data-search-mode] .level-hide {
     url('../fonts/Source-Sans-Pro/sourcesanspro-light-webfont.svg#source_sans_prolight') format('svg');
   font-weight: 300;
   font-style: normal;
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+  html,
+  body,
+  nav,
+  main,
+  section,
+  code,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    background: #222;
+    color: white !important;
+  }
+
+  table,
+  thead,
+  tbody,
+  tr,
+  th,
+  td {
+    background: #111;
+  }
+
+  td>code {
+    background: #222;
+  }
+
+  .description.last {
+    color: #888
+  }
+
+  h4.name,
+  h4.name span.signature {
+    color: black !important;
+  }
+
+  h4.name span {
+    color: #555 !important;
+  }
+
+  .navicon,
+  .navicon::before,
+  .navicon::after {
+    background: white;
+  }
+
+  .nav-trigger:checked+label.x .navicon:after,
+  .nav-trigger:checked+label.x .navicon:before {
+    background: white;
+  }
+
+
+  nav ul ul a {
+    color: white;
+  }
+
 
 }
