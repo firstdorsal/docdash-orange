@@ -1,6 +1,6 @@
 {
   "name": "docdash-orange",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A simple jsdoc theme with a super modern look. Mobile friendly. Dark mode support",
   "main": "publish.js",
   "scripts": {
